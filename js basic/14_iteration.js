@@ -54,4 +54,49 @@ for (i=0; i<=3 ; i++){
 console.log(`Execution Stop`)
 
 
-// 
+// while Loop 
+
+
+
+// let index = 0;
+
+// while (index<=10) {
+//     console.log(`value is 2 ${index}`)
+//      index = index+2;
+    
+// }
+
+// Use of array in While loop
+
+let myArray = ["jan", "Feb","March","Apr"];
+
+arr = 0;
+
+while(arr<=myArray.length){
+    console.log(`The Value is ${myArray[arr]}`);
+    arr = arr + 1;
+    
+}
+
+// Do While loop 
+
+
+
+let test = 1;
+
+do {
+    // console.log(` this is ${test}`);
+    test++
+    
+} while (test<=10);
+
+// do while loop execute code first then condition will be check
+
+let Number = 11 ; 
+
+do {
+    console.log(`This is value is ${Number}`)
+}while(Number<=10) // Output 11 after the condition check loop stop
+
+
+
