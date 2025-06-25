@@ -9,6 +9,21 @@
             background: #212121;
             color: #ffff;
         }
+        .bg-sky{
+            background-color: rgb(239, 234, 125);
+            text-align: center;
+        }
+        .btn-color{
+            width: 200px;
+            height: 60px;
+            font-size: 20pt;
+            background-color: whitesmoke;
+            color: rgb(33, 82, 229);
+
+        }  
+        .btn-color:hover{
+            background-color: burlywood;
+        }
     </style>
 </head>
 <body>
@@ -16,5 +31,21 @@
         <h1 class="heading">Dom Learning with Hitesh Chowdhary</h1>
         <p>Lorem ipsum dolor sit amet.</p>
     </div>
+
+    <div class="bg-sky">
+        <h2 id="message">Hello,developer</h2>
+        <button id="changebtn" class="btn-color" >click here</button>
+    </div>
+
+    <script>
+          document.getElementById('message').innerHTML ="<h1>Chai Aur Code</h1>"
+        const message =document.getElementById('message');
+        const btn = document.getElementById('changebtn');
+
+        btn.addEventListener("click",() => {
+            message.innerHTML =("Now you clicked the button")
+        })
+
+    </script>
 </body>
 </html>
