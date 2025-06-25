@@ -144,6 +144,3 @@ console.log(HandleObj({ // pass directely object Instead of making Object
 
 
 
-
-
-
