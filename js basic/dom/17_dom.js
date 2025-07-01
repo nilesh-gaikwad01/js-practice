@@ -5,3 +5,7 @@
         btn.addEventListener("click",() => {
             message.innerHTML =("Now you clicked the button")
         })
+
+  document.getElementById('bg-Colorbtn').addEventListener("click",() =>{
+    document.getElementById('bg-box').style.backgroundColor = "orange";
+  })

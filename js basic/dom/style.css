@@ -1,0 +1,35 @@
+body{
+       .bg-black{
+            background: #212121;
+            color: #ffff;
+        }
+       .bg-sky{
+            background-color: rgb(244, 231, 0);
+            text-align: center;
+        }
+       .btn-color{
+            width: 200px;
+            height: 60px;
+            font-size: 20pt;
+            background-color: whitesmoke;
+            color: rgb(33, 82, 229);
+
+        }  
+       .btn-color:hover{
+            background-color: rgb(241, 154, 40);
+        }
+        .box{
+            background-color:rgb(140, 197, 122);
+            text-align: center;
+            
+        }
+        .change-color{
+            width: 100px;
+            height: 150px;
+            text-align: center;
+            font-size: 11pt;
+            color: rgb(13, 103, 103);
+
+        }
+
+    }        
