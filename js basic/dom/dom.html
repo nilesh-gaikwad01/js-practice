@@ -21,10 +21,50 @@
     <!-- change background color on button click -->
  
     <div id="bg-box" class="box">
-        <button id="bg-Colorbtn" class="change-color"> Hey! Look chnages the bg after Clicking this</button>
+        <button id="bg-Colorbtn" class="change-color"> Hey! Look changes the bg after Clicking this</button>
+    </div>
+    <div>
+        <ul id="list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <button id="newItem">Add Item</button>
     </div>
 
     <script>
+
+        //HTML Div and text manipulation
+
+ document.getElementById('message').innerHTML ="<h1>Chai Aur Code</h1>"
+        const message =document.getElementById('message');
+        const btn = document.getElementById('changebtn');
+
+        btn.addEventListener("click",() => {
+            message.innerHTML =("Now you clicked the button")
+        })
+
+
+     //Change bg color after clicking it
+
+  document.getElementById('bg-Colorbtn').addEventListener("click",() =>{
+    document.getElementById('bg-box').style.backgroundColor = "orange";
+  })
+
+     // Add new item in list by clicking button
+
+  document.getElementById('newItem').addEventListener("click", () => {
+      const li = document.createElement('li');
+      li.textContent = "New Item";
+      document.getElementById('list').appendChild(li);
+    });
+
+    // change font Size on hover
+  document.getElementById('bg-Colorbtn').addEventListener("mouseenter",() => {
+        document.getElementById('bg-Colorbtn').style.fontSize = "17px";
+    });
+
+
     </script>
 
 </body>
