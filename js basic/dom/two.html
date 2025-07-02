@@ -5,18 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom Chai aur Code</title>
 </head>
-<body>
+<body style="background-color:#2121;">
     <div class="parent" style="background-color: black;color: deepskyblue;">
         <div class="Day">Monday</div>
         <div class="Day">Tuesday</div>
         <div class="Day">Wednseday</div>
         <div class="Day">Thursday</div>
     </div>
-
-    <script>
-       const day = document.querySelector('.parent');
-       console.log(day)
-       conslole.log(day.childern)
-    </script>
 </body>
+<script>
+       const parent = document.querySelector('.parent')
+       console.log(parent)
+       console.log(parent.children)
+       console.log(parent.children[2])//
+
+    //    // for loop 
+    //    for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);
+    //    }
+
+    // parent.children[1].style.color = "orange"
+    // console.log(parent.firstElementChild); // Return the first child
+    // console.log(parent.lastElementChild); // Return the Last child
+
+    //Access Parent
+    const dayOne = document.querySelector('.Day') ;
+    console.log(dayOne);
+    console.log(dayOne.parentElement) // Return the parent tree
+    console.log(dayOne.nextElementSibling); // Return the next childnode 
+    
+    console.log("Nodes :", parent.childNodes);
+
+    </script>
 </html>
