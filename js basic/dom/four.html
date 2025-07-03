@@ -36,6 +36,38 @@
 
     addOptWay("golang") // Function call
 
+    
+    // edit Values
+    
+    const secondLang = document.querySelector("li:nth-child(2)");
+    console.log(secondLang);
+
+    // secondLang.innerHTML = "Mojo"; // second language changed
+
+    const newli = document.createElement('li');
+    newli.textContent = "mojo";
+    secondLang.replaceWith(newli) // method for replacement
+
+    const firstLang = document.querySelector("li:first-child");
+    console.log(firstLang);
+
+    firstLang.outerHTML = "<li> Chnaged with Javacript</li>" 
+    
+    // Remove Values 
+
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+
+
+
+
+
+
+
+
+
+
+
 
 </script>
 </html>
