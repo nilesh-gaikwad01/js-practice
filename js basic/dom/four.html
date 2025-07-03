@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Aur Dom </title>
+</head>
+<body style="background-color: beige;color: darkorange;">
+    <ul class="Language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    // add another list by using Function
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        const add = document.querySelector('.Language');
+        add.appendChild(li)
+    }
+
+    addLanguage("Python") // Function call
+    addLanguage("Typescript")// another lang added
+
+    //Optimized Approch to create element for big project use appendChild and createTextNode Than innerHTML
+
+    function addOptWay (langName){
+       const li = document.createElement('li');
+       const addText = document.createTextNode(langName);
+       li.appendChild(addText)
+
+       document.querySelector('.Language').appendChild(li)
+     
+       //    li.appendChild(document.createTextNode(langName))
+    }
+
+    addOptWay("golang") // Function call
+
+
+</script>
+</html>
