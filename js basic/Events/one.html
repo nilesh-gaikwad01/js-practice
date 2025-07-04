@@ -5,10 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events in Js</title>
 </head>
-<body style="background-color:#242424;color: aliceblue;">
-    <h2>Amazing Images</h2>
-    <div class="Images">
+<body style="background-color:rgba(123, 62, 123, 0.067);">
+    <h2>Events In Javascript</h2>
+    <div class="Effect">
+        <div>
+    <button id="btn" class="button" style="background-color: black;color: white;"> CLICK HERE</button>
+        </div>
+        <div class="form-container">
+            <h2>Admission form</h2>
+            <div>
+                <form action="#" method post>
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Yourr Email ID:</label>
+                        <input type="text" id="email" name="emailID" required>
+                    </div>
 
+                    <div class="form-group">
+                        <label for="">Gender:</label>
+                        <label ><input type="radio" name="gender" value="Male" required>Male</label>
+                        <label><input type="radio" name="gender" value="Female" required>Female</label>
+                        <label><input type="radio" name="gender" value="Other" required>Other</label>
+                    </div>
+                    <div form-group>
+                        <label for="course">Select Course:</label>
+                        <Select id="course" name="course" required>
+                            <option value="">--Select--</option>
+                            <option value="BE">B.E</option>
+                            <option value="MBBS">MBBS</option>
+                            <option value="MBA">MBA</option>
+                            <option value="BCA">BCA</option>
+                            <option value="BSC">BSC</option>
+
+                        </Select> 
+                    </div>
+
+                    <button id="formbtn" type="submit">Submit Application</button>
+
+                </form>
+            </div>
+        </div>
+        
     </div>
     
 </body>
@@ -19,6 +59,26 @@
     // target, toElement, srcElement, currentTarget,
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
+
+
+    // Events In Javascript 
+
+    //Click Event
+
+     document.getElementById('btn').addEventListener("click",function(c){
+        alert("Button Clicked");
+     });
+
+     document.getElementById('formbtn').addEventListener("click",(form)=>{
+        alert("Application Submited");
+     })
+
+
+
+
+
+
+
 
 
 </script>
