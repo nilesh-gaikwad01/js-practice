@@ -4,6 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events in Js</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+            /* padding:20px; */
+        }
+        .form-container{
+            background: #fff;
+            padding: 20px;
+            width: 400px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group{
+            margin-bottom: 15px;
+        }
+
+
+        .btn2 {
+            width: 100%;
+            padding: 10px;
+            background: rgb(74, 142, 219);
+            color: azure;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .btn2:hover{
+            background: #2980b9;
+        }
+        select{
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+
+        }
+        
+
+    </style>
 </head>
 <body style="background-color:rgba(123, 62, 123, 0.067);">
     <h2>Events In Javascript</h2>
@@ -12,6 +55,7 @@
     <button id="btn" class="button" style="background-color: black;color: white;"> CLICK HERE</button>
         </div>
         <div class="form-container">
+            <!-- Simple application for practice -->
             <h2>Admission form</h2>
             <div>
                 <form action="#" method post>
@@ -20,7 +64,7 @@
                         <input type="text" id="name" name="fullname" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Yourr Email ID:</label>
+                        <label for="email">Email ID:</label>
                         <input type="text" id="email" name="emailID" required>
                     </div>
 
@@ -30,7 +74,7 @@
                         <label><input type="radio" name="gender" value="Female" required>Female</label>
                         <label><input type="radio" name="gender" value="Other" required>Other</label>
                     </div>
-                    <div form-group>
+                    <div class="form-group">
                         <label for="course">Select Course:</label>
                         <Select id="course" name="course" required>
                             <option value="">--Select--</option>
@@ -43,7 +87,7 @@
                         </Select> 
                     </div>
 
-                    <button id="formbtn" type="submit">Submit Application</button>
+                    <button id="formbtn" class="btn2" type="submit">Submit Application</button>
 
                 </form>
             </div>
