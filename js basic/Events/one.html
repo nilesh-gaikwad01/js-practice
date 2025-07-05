@@ -117,6 +117,28 @@
         alert("Application Submited");
      })
 
+     //submit event 
+
+     document.querySelector('form').addEventListener('submit', function(e) {
+     e.preventDefault(); // Prevent actual submission
+     console.log('Form submitted');
+     });
+
+     // focus and blur event
+       document.getElementById('email').addEventListener('focus', function() {
+      console.log('User focused on email input');
+     });
+
+     document.getElementById('email').addEventListener('blur', function() {
+     console.log('User left email input');
+     });
+
+     // Mouseover and Mouseout Event.
+
+
+
+
+
 
 
 
