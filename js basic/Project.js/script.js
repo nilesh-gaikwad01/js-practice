@@ -17,3 +17,5 @@ addItemButton.addEventListener("click", () => {
     newItem.textContent = `Item ${list.children.length + 1}`; // Set its text
     list.appendChild(newItem); // Add the new <li> to the <ul>
 });
+
+//
