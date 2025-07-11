@@ -9,7 +9,7 @@ let randomNumber = parseInt(Math.random() * 100+ 1)
  const submit = document.querySelector('#submt');
  const guessSlot = document.querySelector('.guesses');
  const remaining = document.querySelector('.lastResult');
- const lowOrHi = document.querySelector('lowOrHi');
+ const lowOrHi = document.querySelector('.lowOrHi');
  const startOver = document.querySelector('.resultParas')
 
  const p = document.createElement('p')
@@ -47,7 +47,7 @@ function validateGuess (guess){
         alert('please enter Number less than 100')
     }else {
         prevGuess.push(guess);
-        if(guess === numGuess){
+        if(guess === randomNumber){
 
             displayGuess(guess);
             displayMessage(`Gave Over : Random nUmber was ${randomNumber}`);
@@ -88,17 +88,16 @@ function displayMessage(message){
 
 function endGame (){
     userInput.value = '';
-    userInput.setAttribute('disiabled', '');
+    userInput.setAttribute('disabled', '');
     p.classList.add('button');
     p.innerHTML = '<h2 id="newGame">Start New Game </h2>'
     startOver.appendChild(p);
     playGame = false;
     newGame();
-
 }
 
 function newGame (){
-     document.querySelector('#newgame').addEventListener('click',function(e){
+     document.querySelector('#newGame').addEventListener('click',function(e){
         randomNumber = parseInt(Math.random() * 100 +1);
         prevGuess = [];
         numGuess = 1;
