@@ -150,12 +150,12 @@ const str7new2 = str7.trimEnd();
 
 // padding means to add  the extra charector in string
 
-let padone = "new book ";
-let paddedstart1 =padone.padStart("20", "Niluu");
-let paddedstart = padone.padEnd("20","Nilesh");
+// let padone = "new book ";
+// let paddedstart1 =padone.padStart("20", "Niluu");
+// let paddedstart = padone.padEnd("20","Nilesh");
 
-console.log(paddedstart1)
-console.log(paddedstart)
+// console.log(paddedstart1)
+// console.log(paddedstart)
 
 // how to repeat the string
 
@@ -163,9 +163,9 @@ let checkstr = "have you good knw";
 
 const resultedstring = checkstr.repeat(5);
 
-console.log(resultedstring)
-console.log(checkstr.length)// 17
-console.log(resultedstring.length) // 17*5 = 85
+// console.log(resultedstring)
+// console.log(checkstr.length)// 17
+// console.log(resultedstring.length) // 17*5 = 85
 
 
 // how to split the string
@@ -176,18 +176,18 @@ var nilesh = "hello,name,middle name, sir name, village"
 const save = nilesh.split(",");
 const saveres =nilesh.split("");
 
-console.log(save)
-console.log(saveres)
+// console.log(save)
+// console.log(saveres)
 
 
 // How to replace the string 
 
 let count = "ten,nine,eight,seven";
 
-console.log(count.replace("t","become a developer"))
-console.log(count.replace("nine","become a developer"))
-console.log(count.replace("eight","become a developer"))
-console.log(count.replaceAll("ten,nine,eight,seven","MERN Stack Developer"))
+// console.log(count.replace("t","become a developer"))
+// console.log(count.replace("nine","become a developer"))
+// console.log(count.replace("eight","become a developer"))
+// console.log(count.replaceAll("ten,nine,eight,seven","MERN Stack Developer"))
 
 
 // The Differace between Slice(),SubString(), SubStr()
