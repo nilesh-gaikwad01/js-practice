@@ -221,6 +221,51 @@ console.log(first);
 
 
 
+// Find Duplicate Elements in Array
+
+function findDuplicates(arr) {
+  let seen = new Set();
+  let duplicates = new Set();
+
+  for(let num of arr) {
+    if(seen.has(num)) {
+      duplicates.add(num);
+    } else {
+      seen.add(num);
+    }
+  }
+  return [...duplicates];
+}
+console.log(findDuplicates([1, 2, 3, 2, 4, 1]));
+
+
+// Sum of all element in array
+
+function arraSum(arr){
+    return arr.reduce((acc, val ) => acc+val, 0);
+
+}
+console.log(arraSum ([10,20,30])) 
+
+
+// Remove duplicates from array
+
+function removeDuplicate (arr) {
+    return [...new set(arr)]
+
+}
+console.log(removeDuplicate([1,1,2,2,2,3])) // 1,2,3
+
+// Check for Prime Number
+
+function isPrime(n) {
+  if(n <= 1) return false;
+  for(let i = 2; i <= Math.sqrt(n); i++) {
+    if(n % i === 0) return false;
+  }
+  return true;
+}
+console.log(isPrime(7)); // console gives true
 
 
 
