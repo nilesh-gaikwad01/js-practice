@@ -11,21 +11,21 @@ const person = {
 
 let {name, sirname, position} = person 
 
-console.log(name);
-console.log(sirname);
-// console.log(age); nordestruct
-console.log(position);
+// console.log(name);
+// console.log(sirname);
+// // console.log(age); nordestruct
+// console.log(position);
 
 person.name = "web-developer"
 person.position = "development+Devops"
 
-console.log(name);
-console.log(position);
+// console.log(name);
+// console.log(position);
 
 person.age =  "Pune, Mumbai, Bangaluru"
 const {age:city} = person
 
-console.log(city)
+// console.log(city)
  
 
 //
