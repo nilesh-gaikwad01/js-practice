@@ -236,12 +236,12 @@ let  myobject = {
 
 const {name,age,value,position,other} = myobject // Destructring
 
-console.log("check destructring : ",myobject)
-console.log(name);
-console.log(age);
-console.log(value);
-console.log(position);
-console.log(other);
+// console.log("check destructring : ",myobject)
+// console.log(name);
+// console.log(age);
+// console.log(value);
+// console.log(position);
+// console.log(other);
 
 
 const yourobj = {}
@@ -255,8 +255,8 @@ console.log("check destructring : ",yourobj)
 
 var {location,time} = yourobj
 
-console.log(location);
-console.log(time);
+// console.log(location);
+// console.log(time);
 
 const oneres  = yourobj.name = "KK"
 
@@ -273,8 +273,8 @@ nametwo.loggedtime = false
 
 let {adress,loggedtime } = nametwo 
 
-console.log(adress,loggedtime);
-console.log(loggedtime);
+// console.log(adress,loggedtime);
+// console.log(loggedtime);
 
 
 
