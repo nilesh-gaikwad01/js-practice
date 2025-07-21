@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Aur Code</title>
+</head>
+<body>
+    <h1>Hitesh and Chai</h1>
+    <button id="btn">Stop</button>
+</body>
+<script>
+    setTimeout(function(){
+        console.log("chai aur code")
+    },2000);
+
+    const hey = function(){
+        console.log("hello, dev")
+    };
+
+    // // easily change the text
+    const newName = function(){
+    document.querySelector('h1').innerHTML = "<h1>I am developer and Everday Learner</h1>";
+
+    }
+    
+    // setTimeout(hey, 2000) // can give the function referance because its handler no need of fn execution
+    setTimeout(newName, 5000)// can see the changed text
+
+    // clearTimeout() // Stop the timeout
+
+    // add click Event on Stop button for clear the timeout
+
+   const  button = document.querySelector('#btn')
+   button.addEventListener('click', function (){
+    clearTimeout();
+    console.log("Stopped")
+
+   })
+
+
+
+</script>
+</html>
