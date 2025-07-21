@@ -10,6 +10,9 @@
     <button id="btn">Stop</button>
 </body>
 <script>
+
+    // setTimeout() method
+
     setTimeout(function(){
         console.log("chai aur code")
     },2000);
@@ -38,6 +41,12 @@
 
    })
 
+   // setInterval() method
+
+ const interval = setInterval(function(){
+    console.log("hello, new", Date.now())
+ },1000); // It constantly run like loop
+ clearInterval(interval); // clear the interval
 
 
 </script>
