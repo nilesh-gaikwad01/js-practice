@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Unlimited Color</title>
+</head>
+<style>
+    body{
+        background-color: #b7b7b7;
+    }
+</style>
+<body>
+    <div>
+    <h1>Unlimited color Generator</h1>
+    <p>
+        "Tap Start and See the Colors Every Seconds"
+    </p>
+    <button id="start" class="startbtn">Start</button>
+    <button id="stop" class="stopbtn">Stop</button>
+    </div>
+
+
+</body>
+<script>
+//generate a random color
+
+const randomColor = function(){
+    const hex = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += hex[Math.floor(Math.random() * 16)];
+    }
+    return color;
+
+}
+
+console.log(randomColor()); // Function call
+
+//   console.log(Math.floor(Math.random() * 16)) // It Genarate math random value
+
+//methods for the projects
+
+
+let IntervalId; // declare in global  scope for clearInterval()
+const startChangingColor = function (){
+    if(!IntervalId){
+         IntervalId = setInterval(changeBackgroundColor,1000);
+    }
+
+};
+
+const changeBackgroundColor = function (){
+    document.body.style.backgroundColor = randomColor();
+}
+
+const stopChangingColor = function (){
+    clearInterval(IntervalId);
+    IntervalId = null; // flushing the code
+};
+
+document.querySelector('#start').addEventListener('click',startChangingColor);
+document.querySelector('#stop').addEventListener('click',stopChangingColor );
+
+
+
+
+</script>
+</html>
