@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">XMLhttp Request</h1> 
+</body>
+<script>
+    // send http request through xml ajax programming
+
+    const requestUrl = 'https://api.github.com/users/nilesh-gaikwad01' 
+
+   const xhr = new XMLHttpRequest();
+   xhr.open('GET',requestUrl);
+   console.log("here")
+// console.log(xhr.readyState)
+
+  //xhr monitor the state change using onreadystatechange
+  // xhr return the response
+  // function execute again because of the ajax
+
+   xhr.onreadystatechange = function () {
+    console.log(xhr.readyState)
+   console.log("End") 
+    if (xhr.readyState === 4 ) {
+        // console.log(this.responseText) 
+        const data = JSON.parse(this.responseText);
+        // console.log(data.followers) print undefine because of the type of returned data
+        console.log(typeof data) // string 
+
+        console.log(data) // it convert in jason using JASON.parse
+
+        console.log(data.followers)
+    }
+    
+   };
+
+   xhr.send(); // send the request
+
+</script>
+</html>
