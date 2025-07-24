@@ -119,22 +119,22 @@ getAllUsers()
 
 // use fetch API
 
-// const url = 'https://api.github.com/users/nilesh-gaikwad01'
-// fetch(url).then((response) => { 
-//     console.log('step 1 : It return response object')
-//     return response.json(); // convert the object into json
+const url = 'https://api.github.com/users/nilesh-gaikwad01'
+fetch(url).then((response) => { 
+    console.log('step 1 : It return response object')
+    return response.json(); // convert the object into json
 
-// })
-// .then((data) => {
-//     console.log(data); // getting actual data
-//     console.log("Login Details :", data.login );
-//     console.log("FOllowers :",data.followers);
-//     console.log("Following  :", data.following);
-//     console.log("Username :", data.name)
-// })
-// .catch((error) => { 
-//     console.log(error)
-// })
-// .finally(() => { console.log(" Finally : End Here") })
+})
+.then((data) => {
+    console.log(data); // getting actual data
+    console.log("Login Details :", data.login );
+    console.log("FOllowers :",data.followers);
+    console.log("Following  :", data.following);
+    console.log("Username :", data.name)
+})
+.catch((error) => { 
+    console.log(error)
+})
+.finally(() => { console.log(" Finally : End Here") })
 
 
