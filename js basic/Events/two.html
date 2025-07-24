@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Example</title>
+</head>
+<body>
+    <h1 id="main-heading">Welcome to My Website</h1>
+    <p class="description">This is a simple description paragraph.</p>
+    <button id="change-text">Change Text</button>
+    <button id="add-item">Add List Item</button>
+    <ul id="my-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+</body>
+<script>
+    // Select elements from the DOM
+const heading = document.getElementById("main-heading");
+const description = document.querySelector(".description");
+const changeTextButton = document.getElementById("change-text");
+const addItemButton = document.getElementById("add-item");
+const list = document.getElementById("my-list");
+
+// Example 1: Modify the content of an element
+changeTextButton.addEventListener("click", () => {
+    heading.textContent = "Welcome to the JavaScript DOM!";
+    description.style.color = "blue"; // Change text color
+});
+
+// Example 2: Add a new element to the DOM
+addItemButton.addEventListener("click", () => {
+    const newItem = document.createElement("li"); // Create a new <li> element
+    newItem.textContent = `Item ${list.children.length + 1}`; // Set its text
+    list.appendChild(newItem); // Add the new <li> to the <ul>
+});
+
+//
+</script>
+</html>
