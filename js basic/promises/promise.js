@@ -117,12 +117,12 @@ async function getAllUsers (){
 
 getAllUsers()
 
-// use fetch .then  .catch  and .finally
+// use fetch API
 
 // const url = 'https://api.github.com/users/nilesh-gaikwad01'
-// fetch(url).then((abcData) => { 
+// fetch(url).then((response) => { 
 //     console.log('step 1 : It return response object')
-//     return abcData.json(); // convert the object into json
+//     return response.json(); // convert the object into json
 
 // })
 // .then((data) => {
@@ -131,6 +131,9 @@ getAllUsers()
 //     console.log("FOllowers :",data.followers);
 //     console.log("Following  :", data.following);
 //     console.log("Username :", data.name)
+// })
+// .catch((error) => { 
+//     console.log(error)
 // })
 // .finally(() => { console.log(" Finally : End Here") })
 
