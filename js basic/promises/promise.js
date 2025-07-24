@@ -60,7 +60,8 @@ const promiseFour = new Promise (function (resolve,reject){
 
 promiseFour.then(function (myuser){
     console.log(myuser);
-    return username;
+    return myuser.username; // Return just the username for the next .then()
+
 }).then (function (myname){
     console.log(myname);
 
@@ -68,14 +69,69 @@ promiseFour.then(function (myuser){
     console.log(error)
 }).finally(() => { console.log("The Promise is Either resolved or rejected")})
 
-const promiseFive = new (function (resolve,reject){
+
+// Promise consumed by using asyns and await.
+// some cases it will be used for the handling promises because there is no catch
+// e.g when my database connection is not done then I will not go the next task
+
+const promiseFive = new Promise (function (resolve,reject){
 
     setTimeout(function (){
         let error = true;
         if(!error){
-            resolve({username:"Nilesh zz", sirname: "gaikwad"})
+            resolve({username:"Nilesh zz", surname: "gaikwad"})
         }else{
-            reject("Js Wents Wrong")
+            reject("Js Went Wrong")
         }
     },1000)
 })
+
+async function consumePromiseFive (){
+    try {
+        const response = await promiseFive ;
+        console.log(response)
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+consumePromiseFive() // Function call
+
+// await is used to wait for a Promise to finish. 
+// await only works inside async functions
+// async functions always return Promises
+// Always use try-catch for error handling
+
+async function getAllUsers (){
+  try {
+    const response =  await fetch('https://api.github.com/users/nilesh-gaikwad01');
+    // console.log(response) // see the console this data will take time to the convert actual data thats why below await response is used
+
+    const data = await response.json(); // await for a time and get data
+    console.log(data);
+  } catch (error) {
+    console.log("E :",error)
+  }
+  
+}
+
+getAllUsers()
+
+// use fetch .then  .catch  and .finally
+
+// const url = 'https://api.github.com/users/nilesh-gaikwad01'
+// fetch(url).then((abcData) => { 
+//     console.log('step 1 : It return response object')
+//     return abcData.json(); // convert the object into json
+
+// })
+// .then((data) => {
+//     console.log(data); // getting actual data
+//     console.log("Login Details :", data.login );
+//     console.log("FOllowers :",data.followers);
+//     console.log("Following  :", data.following);
+//     console.log("Username :", data.name)
+// })
+// .finally(() => { console.log(" Finally : End Here") })
+
+
