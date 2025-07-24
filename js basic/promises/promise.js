@@ -1,5 +1,5 @@
 
-// promises in javascript
+// promises in javascript 
 
 const promiseOne = new Promise(function (resolve, reject){
     // do any asyns task 
