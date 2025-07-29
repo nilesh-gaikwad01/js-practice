@@ -13,8 +13,8 @@ const user = {
     }
 }
 
-console.log(user.username);
-console.log(user.getUserDetails());
+// console.log(user.username);
+// console.log(user.getUserDetails());
 
 // console.log(this); // It return the empty object {}, in global context
 
@@ -39,6 +39,6 @@ const userTwo =  new User("Hitesh Chowdhari",18,false)
 
 
 // console.log(userOne) // Values Overrights
-console.log(userTwo) // new keywords create its new instance , then value can't overrights
+// console.log(userTwo) // new keywords create its new instance , then value can't overrights
 
-console.log(userOne.constructor);
+// console.log(userOne.constructor);
