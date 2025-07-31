@@ -7,10 +7,10 @@ let user = {
     }
     
 }
-user.title() // function call
+user.title() // function call 
 
 
-console.log(this); // It Return The Empty Object {}
+console.log(this); // It Return The Empty Object now {}
 
 // notes;
 
