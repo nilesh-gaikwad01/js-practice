@@ -1,3 +1,12 @@
+
+// Importance of new keyword
+
+// new keyword create new object
+// referance
+// prototype is linked with object
+// javascript give constructor function using new keyword
+//
+
 /*
 
 Here's what happens behind the scenes when the new keyword is used:
@@ -13,30 +22,32 @@ The new object is returned: After the constructor function has been called, if i
 */
 
 
-// function multipleBy5(num){
+function multipleBy5(num){
 
-//     return num*5
-// }
+    return num*5
+}
 
-// multipleBy5.power = 2
+multipleBy5.power = 2
 
-// console.log(multipleBy5(5));
-// console.log(multipleBy5.power);
-// console.log(multipleBy5.prototype);
+console.log(multipleBy5(5));
+console.log(multipleBy5.power);
+console.log(multipleBy5.prototype);
 
-// function createUser(username, score){
-//     this.username = username
-//     this.score = score
-// }
+function createUser(username, score){
+    this.username = username
+    this.score = score
+}
 
-// createUser.prototype.increment = function(){
-//     this.score++
-// }
-// createUser.prototype.printMe = function(){
-//     console.log(`price is ${this.score}`);
-// }
+createUser.prototype.increment = function(){
+    this.score++
+}
+createUser.prototype.printMe = function(){
+    console.log(`price is ${this.score}`);
+}
 
-// const chai = new createUser("chai", 25)
-// const tea = createUser("tea", 250)
+const chai = new createUser("chai", 25) // uses new keyworld 
+const tea = createUser("tea", 250)
 
-// chai.printMe()
+chai.printMe()
+
+
