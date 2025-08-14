@@ -66,5 +66,4 @@ console.log(tea.changerUsername());
 //  console.log(chai ===  User );
  console.log(chai instanceof User);
  
-
                           
