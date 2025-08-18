@@ -52,6 +52,8 @@ console.log(employeDetail)
 
 // Loop is used when the given is method means using function inside it
 
+// handle methods 
+
 // for (let [key,value] of Object.entries(employeDetail)) {
 //     if (typeof value !== "function") {
 //         console.log(`print the key : ${key} and value : ${value}`);        
