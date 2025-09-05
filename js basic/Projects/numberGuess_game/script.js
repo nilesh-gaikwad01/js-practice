@@ -2,6 +2,8 @@
 
 let randomNumber = parseInt(Math.random() * 100+ 1)
 
+// console.log(randomNumber);
+
 
 // select the element
 
